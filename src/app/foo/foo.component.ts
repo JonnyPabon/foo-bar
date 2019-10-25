@@ -12,4 +12,10 @@ export class FooComponent implements OnInit {
   ngOnInit() {
   }
 
+  sharedData = 'Foo Shared Data';
+
+  //property that is being initialized
+  changeSharedData = () => {
+    console.log('changedSharedData');
+  }
 }
